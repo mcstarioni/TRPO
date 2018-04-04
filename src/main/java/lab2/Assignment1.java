@@ -33,6 +33,10 @@ public class Assignment1
     {
         public static void main(String[] args) throws Exception
         {
+            System.out.println(getJsonWeather());
+        }
+        public static String getJsonWeather() throws Exception
+        {
             Map<String,Map> jsonTable = new HashMap<>();
 
             Connection con = DriverManager.getConnection(url, user, password);
@@ -70,7 +74,7 @@ public class Assignment1
                     jsonTable.put(name,valuesTable);
                 }
             }
-            System.out.println(new Gson().toJson(jsonTable));
+            return new Gson().toJson(jsonTable);
         }
     }
     private static String readFromJson(InputStream inputStream)
