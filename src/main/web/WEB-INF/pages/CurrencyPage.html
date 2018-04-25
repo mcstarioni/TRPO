@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+<html>
+<head>
+    <title>Websocket Sample</title>
+    <script>
+        var socket = new WebSocket("ws://localhost:8080/events/getshit");
+        socket.onopen = function (event)
+        {
+            var data = 101;
+            socket.send(data);
+        };
+        socket.onmessage = function (message)
+        {
+            document.getElementById("currency").innerHTML = message.data + "<br>" + "Updated at" + new Date();
+        };
+        socket.onerror = function (error) {
+            alert("Error " + error.message);
+        };
+    </script>
+</head>
+<body>
+<p>
+    Hello world lab4
+</p>
+<p id = "currency">
+
+</p>
+</body>
+</html>
