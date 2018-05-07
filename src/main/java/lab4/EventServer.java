@@ -1,4 +1,4 @@
-package example;
+package lab4;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;

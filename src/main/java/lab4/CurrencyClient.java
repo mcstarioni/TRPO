@@ -1,6 +1,5 @@
-package example;
+package lab4;
 
-import com.google.gson.Gson;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;

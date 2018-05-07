@@ -1,4 +1,4 @@
-package example;
+package lab4;
 
 
 import org.eclipse.jetty.websocket.servlet.WebSocketServlet;
@@ -8,10 +8,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.stream.Stream;
 
 @SuppressWarnings("serial")
 public class EventServlet extends WebSocketServlet

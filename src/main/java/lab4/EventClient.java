@@ -1,4 +1,4 @@
-package example;
+package lab4;
 
 import java.net.URI;
 import java.util.concurrent.Future;

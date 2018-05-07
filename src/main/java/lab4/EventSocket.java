@@ -1,9 +1,7 @@
-package example;
+package lab4;
 
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.WebSocketAdapter;
-
-import java.io.IOException;
 
 public class EventSocket extends WebSocketAdapter
 {
